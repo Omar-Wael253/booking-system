@@ -22,7 +22,7 @@ return new class extends Migration
             $table->unsignedInteger("capacity");
             $table->softDeletes("deleted_at");
             $table->timestamps();
-            $table->check("start_time < end_time");
+
         });
     }
 
