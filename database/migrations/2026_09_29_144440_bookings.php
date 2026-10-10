@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
             $table->foreignId("student_id")->constrained("students");
-            $table->foreignId("session_id")->constrained("sessions")->cascadeOnDelete();
+            $table->foreignId("session_id")->constrained("class_sessions")->cascadeOnDelete();
             $table->enum("status" , ['confirmed' , 'cancelled']);
             $table->timestamps();
             $table->unique(['student_id' , 'session_id']);
