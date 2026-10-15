@@ -402,3 +402,238 @@ tbody tr:hover {
             flex-wrap: wrap;
         }
     }
+
+    /* Academic Year form */
+
+    .page-description {
+        margin: 8px 0 0;
+        color: #64748b;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .form-card {
+        max-width: 680px;
+        padding: 28px;
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 14px;
+        box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+    }
+
+    .form-group {
+        margin-bottom: 24px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 9px;
+        color: #1e293b;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .form-group input {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 14px;
+        color: #0f172a;
+        background: #ffffff;
+        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+        font: inherit;
+        outline: none;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-group input:focus {
+        border-color: #2563eb;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    }
+
+    .form-group input.is-invalid {
+        border-color: #dc2626;
+    }
+
+    .field-error {
+        margin: 7px 0 0;
+        color: #dc2626;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .field-hint {
+        margin: 8px 0 0;
+        color: #64748b;
+        font-size: 12px;
+    }
+
+    .form-actions {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 12px;
+        padding-top: 20px;
+        border-top: 1px solid #e2e8f0;
+    }
+
+    .btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 16px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        font: inherit;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.2s, border-color 0.2s;
+    }
+
+    .btn-primary {
+        color: #ffffff;
+        background: #2563eb;
+    }
+
+    .btn-primary:hover {
+        background: #1d4ed8;
+    }
+
+    .btn-secondary {
+        color: #334155;
+        background: #ffffff;
+        border-color: #cbd5e1;
+    }
+
+    .btn-secondary:hover {
+        background: #f8fafc;
+        border-color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+        .form-card {
+            padding: 20px;
+        }
+
+        .form-actions {
+            flex-wrap: wrap;
+        }
+    }
+
+
+    /* Academic Years index page */
+
+    .table-card {
+        overflow: hidden;
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 14px;
+        box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+    }
+
+    .table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+    }
+
+    .data-table thead {
+        background: #f8fafc;
+    }
+
+    .data-table th {
+        padding: 16px 20px;
+        color: #64748b;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    .data-table td {
+        padding: 18px 20px;
+        color: #334155;
+        font-size: 14px;
+        border-top: 1px solid #f1f5f9;
+        white-space: nowrap;
+    }
+
+    .data-table tbody tr {
+        transition: background-color 0.2s;
+    }
+
+    .data-table tbody tr:hover {
+        background: #f8fafc;
+    }
+
+    .year-badge {
+        display: inline-block;
+        padding: 6px 10px;
+        color: #1d4ed8;
+        background: #eff6ff;
+        border: 1px solid #dbeafe;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .empty-state {
+        padding: 56px 24px;
+        text-align: center;
+    }
+
+    .empty-state h2 {
+        margin: 0 0 10px;
+        color: #0f172a;
+        font-size: 20px;
+    }
+
+    .empty-state p {
+        margin: 0 0 24px;
+        color: #64748b;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+        .data-table th,
+        .data-table td {
+            padding: 14px 16px;
+        }
+
+        .empty-state {
+            padding: 40px 20px;
+        }
+    }
+
+    /* Academic Year flash messages */
+
+    .alert {
+        margin-bottom: 20px;
+        padding: 14px 16px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .alert-success {
+        color: #166534;
+        background-color: #f0fdf4;
+        border-color: #bbf7d0;
+    }
+
+    .alert-error {
+        color: #991b1b;
+        background-color: #fef2f2;
+        border-color: #fecaca;
+    }
